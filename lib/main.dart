@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:places/screens/add_place.dart';
+import 'package:places/screens/map.dart';
 import 'package:places/screens/places.dart';
 
 import 'screens/places_detail.dart';
@@ -35,7 +36,9 @@ class MyApp extends StatelessWidget {
       routes: {
         'home': (context) => const PlacesScreen(),
         'home/addPlace': (context) => const AddPlaceScreen(),
+        'home/addPlace/selectYourLocation' : (context) => const MapScreen(),
         'home/placeDetail' : (context) => const PlacesDetailScreen(),
+        'home/placeDetail/map' : (context) => const MapScreen(),
       },
     );
   }
